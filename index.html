@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Teddy Day 🧸🧸🧸🥰</title>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<center>
+<body>
+<div class="container">
+    <h1>Happy Birthday, Chotu Baby!</h1>
+    <p>Today is all about celebrating you. I hope your day is as wonderful and special as you are. You light up my life in so many ways, and I am so grateful for you.</p>
+    <p>Wishing you a day filled with love, joy, and everything you’ve been dreaming of. Here’s to many more birthdays together!</p>
+    <div class="heart-container">
+        <!-- Heart emoji -->
+        <span class="heart-emoji">❤️🧸️</span>
+    </div>
+    <p>With all my love,<br>Tarun</p>
+    <!-- Button linking to another page -->
+    <a href="p1.html" class="button">There's more ...</a>
+</div>
+<!-- Include canvas-confetti script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+<script>
+        // Function to trigger confetti
+        function launchConfetti() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
 
-    <body>
-        <h1>Happy Teddy Day Chotu Babyyyy 🧸😚😚😚</h1>
-        <img src="./v_teddy_bear.jpg" alt="*HAPPY Teddy DAY*"/>
-        <!--<p>I could have simply said this, but then I remembered that Jin once said
-            <a href="https://www.youtube.com/watch?v=WMweEpGlu_U&t=143s">
-                <button>this</button>
-            </a>
-        </p>-->
-    </body>
-</center>
+        // Trigger confetti on page load
+        window.onload = function() {
+            // Launch confetti immediately
+            launchConfetti();
 
+            // Set an interval to launch confetti every 3 seconds
+            setInterval(launchConfetti, 2500); // 3000 milliseconds = 3 seconds
+        };
+    </script>
+</body>
 </html>
