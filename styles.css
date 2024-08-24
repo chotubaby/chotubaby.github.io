@@ -42,3 +42,8 @@ p {
 .button:hover {
     background-color: #ff3399; /* Darker pink for hover effect */
 }
+
+.responsive-image {
+            width: 100%;
+            height: auto;
+}
